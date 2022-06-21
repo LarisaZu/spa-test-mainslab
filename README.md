@@ -1,4 +1,4 @@
-lz-test-mainslab.netlify.app/
+https://lz-test-mainslab.netlify.app/
 
 # Реализовать SPA приложение:
 
