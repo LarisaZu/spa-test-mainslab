@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getApi, addOperation } from "../services/operations";
+import { getApi } from "../services/operations";
 import Button from "../components/Button";
 import ResponseContent from "../components/ResponseContent";
 

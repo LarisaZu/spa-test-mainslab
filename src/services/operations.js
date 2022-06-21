@@ -1,5 +1,3 @@
-import { getTodayDateFormat } from "../services/date";
-
 const BASE_URL = "https://httpbin.org";
 
 export async function getApi() {
@@ -63,6 +61,3 @@ export async function imagesApi(params) {
   return result.map((el) => el.url);
 }
 
-// export function addOperationInfo(date, url) {
-//   return `Date: ${getTodayDateFormat(date)}; link: ${url}`;
-// }
