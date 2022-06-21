@@ -1,0 +1,11 @@
+.wrapper {
+  margin-top: 20px;
+  background-color: #2a363b;
+}
+
+.description {
+  padding: 10px 20px;
+  color: white;
+  line-height: 2;
+  text-align: justify;
+}

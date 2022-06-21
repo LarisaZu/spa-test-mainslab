@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+}
+
+.list li {
+  width: 150px;
+}
+
+.list li:not(:last-child) {
+  margin-right: 20px;
+}
