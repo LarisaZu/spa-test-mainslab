@@ -1,14 +1,13 @@
 const BASE_URL = "https://httpbin.org";
 
 export async function getApi() {
-
   try {
     const response = await fetch(`${BASE_URL}/get`);
 
     if (!response.ok) {
       throw new Error("Error fetching data");
     } else {
-      return response.text();
+      return response.json();
     }
   } catch (error) {
     console.log("Error:", error);
@@ -27,7 +26,7 @@ export async function postApi(data) {
     if (!response.ok) {
       throw new Error("Error fetching data");
     } else {
-      return response.text();
+      return response.json();
     }
   } catch (error) {
     console.log("Error:", error);
@@ -46,7 +45,7 @@ export async function deleteApi(data) {
     if (!response.ok) {
       throw new Error("Error fetching data");
     } else {
-      return response.text();
+      return response.json();
     }
   } catch (error) {
     console.log("Error:", error);
@@ -60,4 +59,3 @@ export async function imagesApi(params) {
   const result = await Promise.all(requests);
   return result.map((el) => el.url);
 }
-

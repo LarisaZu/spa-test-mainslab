@@ -4,13 +4,22 @@ import { data } from "../services/data";
 import Button from "../components/Button";
 import ResponseContent from "../components/ResponseContent";
 
-export default function PostView() {
+export default function PostView({ addOperation }) {
   const [response, setResponse] = useState(null);
 
   const handleGetClick = () => {
-    postApi(data).then((res) => {
-      setResponse(res);
-    });
+    let tmpUrl = null;
+    postApi(data)
+      .then((res) => {
+        tmpUrl = res.url;
+        setResponse(JSON.stringify(res));
+      })
+      .then(() =>
+        addOperation({
+          date: new Date(),
+          url: tmpUrl,
+        })
+      );
   };
 
   return (

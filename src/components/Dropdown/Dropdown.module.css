@@ -1,0 +1,8 @@
+.wrapper {
+  display: flex;
+}
+
+.wrapper h3 {
+  font-weight: 500;
+  margin-left: 8px;
+}

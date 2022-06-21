@@ -6,7 +6,7 @@ export default function Gallery({ list }) {
     <ul className={styles.list}>
       {list.map((item) => (
         <li key={item}>
-          <img src={item} />
+          <img src={item} alt="Description"/>
         </li>
       ))}
     </ul>

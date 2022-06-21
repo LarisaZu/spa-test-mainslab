@@ -1,0 +1,15 @@
+.list {
+  overflow: auto;
+  height: 75%;
+}
+.list li {
+  padding: 5px;
+}
+
+.list li:nth-child(odd) {
+  background-color: #e1f1ff;
+}
+
+.list li:nth-child(even) {
+  background-color: white;
+}
